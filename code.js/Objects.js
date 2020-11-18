@@ -1,4 +1,5 @@
 // BEGIN (write your solution here)
+
 const fn = obj => {
   return obj = {
   "files": ["src/objects.js"],
@@ -6,6 +7,7 @@ const fn = obj => {
   }
 }
  export default fn;
+
 // END
 
 /*objects.js
