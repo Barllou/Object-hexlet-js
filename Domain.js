@@ -1,4 +1,5 @@
 // BEGIN (write your solution here)
+
 const getDomainInfo = (strDom) => {
   let scheme = '';
   if (strDom.startsWith('https://')) {
@@ -16,7 +17,7 @@ const getDomainInfo = (strDom) => {
 export default getDomainInfo;
 // END
 
-Реализуйте и экспортируйте по умолчанию функцию, которая принимает на вход имя сайта и возвращает информацию о нем:
+/*Реализуйте и экспортируйте по умолчанию функцию, которая принимает на вход имя сайта и возвращает информацию о нем:
 
 import getDomainInfo from './domain.js';
 
@@ -38,4 +39,4 @@ getDomainInfo('http://google.com');
 // {
 //   scheme: 'http',
 //   name: 'google.com',
-// }
+// }*/
