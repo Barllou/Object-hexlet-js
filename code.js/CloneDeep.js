@@ -18,6 +18,16 @@ export default cloneDeep;
 
 // END
 
+//Version 2===================
+const cloneDeep = (obj) => {
+  const resObj = {};
+  const arr = Object.keys(obj);
+  for (const el of arr) {
+    _.isObject(obj[el]) ? resObj[el] = cloneDeep(obj[el]) : resObj[el] = obj[el];
+  }
+  return resObj;
+};
+
 /*objects.js
 Реализуйте и экспортируйте по умолчанию функцию, которая выполняет глубокое копирование объектов. Для реализации этой задачи нельзя использовать функцию cloneDeep() библиотеки lodash.
 
