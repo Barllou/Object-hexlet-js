@@ -14,6 +14,19 @@ export default fill;
 
 // END
 
+//Version 2===================
+
+// BEGIN (write your solution here)
+
+const fill = (obj1, replace, obj2) => {
+    const repl = replace.length <= 0 ? obj2 : _.pick(obj2, replace);
+    return Object.assign(obj1, repl);
+};
+
+export default fill;
+
+// END
+
 /*objects.js
 Реализуйте и экспортируйте по умолчанию функцию, которая заполняет объект данными из другого объекта по разрешенному списку ключей. Параметры:
 
