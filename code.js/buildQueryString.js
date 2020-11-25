@@ -17,6 +17,26 @@ export default buildQueryString;
 
 // END
 
+//Version.2===============
+
+// BEGIN (write your solution here)
+
+const buildQueryString = (obj) => {
+  let result = [];
+  const arrObj = Object.entries(obj);
+  const arrSort = arrObj.sort();
+  for (const [key, value] of arrSort) {
+    result.push(`${[key]}=${[value]}`);
+  }
+  return result.join('&');
+};
+
+export default buildQueryString;
+
+// END
+
+
+
 /*Query String (строка запроса) - часть адреса страницы в интернете, содержащая константы и их значения. Она начинается после вопросительного знака и идет до конца адреса. Пример:
 
 # query string: page=5
